@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- 
+        Very important! Do not set withds in px
+        Your website is responsive by default unless you start using PX for width or height
+
+        You can still use px for cosmetic purposes or for max-width and min-width
+
+        Avoid setting a fixed height..use min-height instead
+     -->
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas id
+      voluptates aut est unde tempore architecto eum labore sequi eligendi
+      maxime eaque cum, quae sit eius corrupti dicta, in quos.
+    </p>
+
+    <!-- responsive font-size -->
+    <div class="vwFont">Some text in VW unit</div>
+    <!-- could be tempting to use but it does not reflect user's choice -->
+    <div class="remFont">Some text in REM unit</div>
+    <!-- stick to rems for font-size -->
+
+    <!-- responsive image -->
+    <p class="note">Non responsive image</p>
+    <!-- <img src="images/strawberry.jpeg" alt="strawberries fruits and flowers"> -->
+
+    <p class="note">
+      if you want your image to scale both up and down add width:100% and
+      height: auto
+    </p>
+
+    <img
+      class="responsive"
+      src="images/strawberry.jpeg"
+      alt="strawberries fruits and flowers"
+    />
+
+    <p class="note">
+      if you want your image to scale down if needed but never scale up add
+      max-width:100% and height: auto
+    </p>
+
+    <img
+      class="responsive2"
+      src="images/strawberry.jpeg"
+      alt="strawberries fruits and flowers"
+    />
+
+    <!-- media queries -->
+
+    <section>
+      <h2>Types of media queries</h2>
+      <p>@media all - default and can be omitted</p>
+      <p>@media screen - phones, tablets, desktops</p>
+      <p>@media print - used for printing</p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+html {
+  font-size: 62.5%; /* this corresponds to 10px */
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: lightblue;
+}
+
+/* FONT-SIZE */
+
+.vwFont {
+  font-size: 3vw;
+}
+
+.remFont {
+  font-size: 1.6rem;
+}
+
+/* IMAGES */
+
+.note {
+  background-color: lightgoldenrodyellow;
+  padding: 1.5rem;
+}
+
+.responsive {
+  /* scales up and down */
+  width: 100%;
+  height: auto;
+}
+
+.responsive2 {
+  /* scales down but not up */
+  max-width: 100%;
+  height: auto;
+}
+
+/* MEDIA QUERIES */
+
+/* 
+    ANATOMY OF A MEDIA QUERY
+    @media <device size> <orientation> {
+
+    } 
+*/
+
+/* 
+The above styles will be applied across all breakpoints 
+Make sure to set generic styles outside first 
+Use breakpoints only to change specific things
+*/
+
+/* 
+you don't need to setup a media query specifically for mobile 
+because that's the default 
+*/
+
+@media screen and (min-width: 576px) {
+  /* Small devices (landscape phones, 576px and up) */
+
+  body {
+    background-color: lime;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Medium devices (tablets, 768px and up) */
+
+  body {
+    background-color: gold;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Large devices (desktops, 992px and up) */
+
+  body {
+    background-color: salmon;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* X-Large devices (large desktops, 1200px and up) */
+
+  body {
+    background-color: plum;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* XX-Large devices (larger desktops, 1400px and up) */
+
+  body {
+    background-color: lightskyblue;
+  }
+}
+
+@media print {
+  /* targets styles on printview */
+
+  img {
+    display: none;
+  }
+}

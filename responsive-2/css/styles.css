@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: lightgreen;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 4.5rem;
+  font-size: 5rem;
+  color: rgb(17, 61, 17);
+}
+
+main {
+  padding: 1.5rem;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  background-color: lightgreen;
+}
+
+p {
+  margin: 1.5rem 0;
+  color: rgb(37, 88, 60);
+}
+
+/* ladscape phones */
+@media (min-width: 576px) {
+  img {
+    width: 50%;
+  }
+
+  p {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  section {
+    width: 33%;
+    display: inline-block;
+  }
+
+  img {
+    width: initial;
+  }
+
+  p {
+    width: initial;
+  }
+}
